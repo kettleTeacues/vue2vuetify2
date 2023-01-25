@@ -4,37 +4,39 @@
             v-model="drawer"
             app
         >
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
+        <list />
         </v-navigation-drawer>
 
 
         <v-app-bar app>
             <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
             <v-toolbar-title>
-                Application
+                Lifelog
             </v-toolbar-title>
         </v-app-bar>
 
 
         <v-main>
-            <calendar />
+            <week />
         </v-main>
     </v-app>
 </template>
 
 <script>
-import calendar from './components/calendar';
+import list from './components/list';
+import week from './components/week';
+import month from './components/month';
 
 export default {
     name: 'App',
     
     components: {
-        calendar,
+        list,
+        week,
+        month,
     },
-    data: () => ({ drawer: null }),
+    data: () => ({
+        drawer: '',
+     }),
 };
 </script>

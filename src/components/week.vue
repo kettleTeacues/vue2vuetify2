@@ -23,12 +23,14 @@ export default {
         events: [
             {
                 name: 'Weekly Meeting',
-                start: '2019-01-06 22:00',
+                start: '2019-01-06 09:00',
                 end: '2019-01-07 10:00',
             },
             {
                 name: `Thomas' Birthday`,
-                start: '2019-01-10',
+                start: '2019-01-07 08:00',
+                end: '2019-01-07 08:00',
+                color: 'red'
             },
             {
                 name: 'Mash Potatoes',
